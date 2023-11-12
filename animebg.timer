@@ -1,0 +1,9 @@
+[Unit]
+Description=animebg scheduler
+
+[Timer]
+OnBootSec=0min
+OnUnitActiveSec=1min
+
+[Install]
+WantedBy=graphical.target

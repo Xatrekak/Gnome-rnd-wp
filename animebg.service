@@ -1,0 +1,20 @@
+#This file goes here: /etc/systemd/system/animebg.service
+#Test with:   systemctl start animebg.service 
+#Check with   systemctl status animebg.service
+#Enable with: systemctl enable animebg.service
+#follow with: journalctl --follow -u animebg.service
+[Unit]
+Description=animebg
+After=network.target
+After=graphical.target
+
+[Service]
+User=USERNAME
+Group=USERNAME
+ExecStart=/usr/bin/python3 /usr/bin/animebg.py
+RemainAfterExit=false
+Type=oneshot
+
+
+[Install]
+WantedBy=graphical.target
