@@ -1,5 +1,5 @@
 # Gnome-rnd-wp
-Provides and rotates Gnome wallpapers from a [ntbg.app](https://github.com/Xatrekak/wallpaperRD), A free service that pulls anime wallpapers from wallhaven.cc 
+Provides and rotates Gnome wallpapers from [ntbg.app](https://github.com/Xatrekak/wallpaperRD), A free service I also run that pulls random anime wallpapers from wallhaven.cc 
 
 
 # Install Insctruction
