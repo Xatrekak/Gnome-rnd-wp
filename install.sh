@@ -114,7 +114,7 @@ sed -i -e 's/TIMERVAR/'$TIMER'/g' animebg.timer
 sed -i -e 's/NSFWVAR/'$NSFW_LVL'/g' animebg.py
 
 if [ "$NSFW_LVL" = "auto" ]; then
-    sed -i -e 's@TZVAR@'$TIMEZONE'@g' animebg.py
+    sed -i -e 's@TZVAR@?timezone='$TIMEZONE'@g' animebg.py
 else
     sed -i -e 's/TZVAR//g' animebg.py
 fi
