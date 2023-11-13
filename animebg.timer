@@ -1,9 +1,12 @@
+#This file goes here: /etc/systemd/system/animebg.timer
+#Test with:   systemctl status animebg.timer 
+#follow with: journalctl --follow -u animebg.timer
 [Unit]
 Description=animebg scheduler
 
 [Timer]
 OnBootSec=0min
-OnUnitActiveSec=1min
+OnUnitActiveSec=TIMERVAR
 
 [Install]
 WantedBy=graphical.target
