@@ -7,7 +7,7 @@ NC='\033[0m' # No Color
 # Function to display help
 function help {
   echo "Usage:" >&2
-  echo "--nsfw_lvl: Set NSFW level (sfw, pg13, nsfw, auto). Default: sfw" >&2
+  echo "--nsfw_lvl: Set NSFW level (sfw, pg13, nsfw, all, auto). Default: sfw" >&2
   echo "--timezone: Set timezone. Default: America/New_York" >&2
   echo "--timer: Set timer (pattern Xmin, e.g., 15min). Default: 10min" >&2
   echo "--allow-root: Allow the script to run as root (confirmation required)" >&2
@@ -91,7 +91,7 @@ elif [ "$(id -u)" == "0" ]; then
 fi
 
 # Validate nsfw_lvl
-if ! [[ "$NSFW_LVL" =~ ^(sfw|pg13|nsfw|auto)$ ]]; then
+if ! [[ "$NSFW_LVL" =~ ^(sfw|pg13|nsfw|all|auto)$ ]]; then
   echo "Invalid nsfw_lvl option: $NSFW_LVL"
   exit 1
 fi
@@ -114,7 +114,7 @@ sed -i -e 's/TIMERVAR/'$TIMER'/g' animebg.timer
 sed -i -e 's/NSFWVAR/'$NSFW_LVL'/g' animebg.py
 
 if [ "$NSFW_LVL" = "auto" ]; then
-    sed -i -e 's/TZVAR/?timezone='$TIMEZONE'/g' animebg.py
+    sed -i -e 's/TZVAR/'?timezone=$TIMEZONE'/g' animebg.py
 else
     sed -i -e 's/TZVAR//g' animebg.py
 fi
