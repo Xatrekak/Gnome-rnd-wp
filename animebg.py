@@ -6,8 +6,8 @@ class Update_bg:
     def __init__(self):
         self.timezone = "TZVAR"
         self.ntbg = f"https://ntbg.app/NSFWVAR{self.timezone}"
-        self.wp_file1 = "/tmp/current_wp1"
-        self.wp_file2 = "/tmp/current_wp2"
+        self.wp_file1 = "/etc/animebg/current_wp1"
+        self.wp_file2 = "/etc/animebg/current_wp2"
         self.current_wp = ""
         self.user_id = str(getuid())
         self.get_bg()
