@@ -119,6 +119,8 @@ else
     sed -i -e 's/TZVAR//g' animebg.py
 fi
 
+sudo mkdir -p /etc/animebg/
+sudo chmod 777 /etc/animebg
 sudo cp animebg.py /usr/bin/animebg.py
 sudo cp animebg.service /etc/systemd/system/animebg.service
 sudo cp animebg.timer /etc/systemd/system/animebg.timer
