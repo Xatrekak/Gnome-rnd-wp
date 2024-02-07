@@ -2,7 +2,7 @@
 Provides and rotates Gnome wallpapers from [ntbg.app](https://github.com/Xatrekak/wallpaperRD), A free service I also run that pulls random anime wallpapers from wallhaven.cc 
 
 
-# Install Insctruction
+# Install Instruction
 
 Open a terminal
 
