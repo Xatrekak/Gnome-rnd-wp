@@ -36,21 +36,29 @@ These options can be combined to tailor the installation according to your prefe
 ```
 Easy install with sane defaults. Pulls a new SFW background every 10 minutes.
 
+
+
 ```bash
 ./install.sh --nsfw_lvl pg13 --timer 30min
 ```
 This command would set the NSFW level to pg13, and change the background every 30 minutes.
+
+
 
 ```bash
 ./install.sh --nsfw_lvl all --timer 1440min
 ```
 This command would set the NSFW level to all, and change the background once perday from a random rating.
 
+
+
 ```bash
 ./install.sh --nsfw_lvl auto --timezone Europe/Berlin --timer 10min
 ```
 This command would set the NSFW level to auto, use Europe/Berlin as the timezone, and change the background every 10 minutes.
 A list of timezones can be found here: [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+
 
 ```bash
 ./install.sh --nsfw_lvl nsfw --timer 1min
