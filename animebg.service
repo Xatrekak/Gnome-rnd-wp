@@ -4,9 +4,9 @@ After=network.target
 After=graphical.target
 
 [Service]
-User=USERVAR
-Group=USERVAR
-ExecStart=/usr/bin/python3 /usr/bin/animebg.py
+User=dustin
+Group=dustin
+ExecStart=/usr/bin/python3 /usr/local/bin/animebg.py
 RemainAfterExit=false
 Type=oneshot
 

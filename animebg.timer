@@ -6,7 +6,7 @@ Description=animebg scheduler
 
 [Timer]
 OnBootSec=0min
-OnUnitActiveSec=TIMERVAR
+OnUnitActiveSec=10min
 
 [Install]
 WantedBy=graphical.target

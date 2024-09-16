@@ -4,8 +4,8 @@ import sys
 
 class Update_bg:
     def __init__(self):
-        self.timezone = "TZVAR"
-        self.ntbg = f"https://ntbg.app/NSFWVAR{self.timezone}"
+        self.timezone = ""
+        self.ntbg = f"https://ntbg.app/sfw{self.timezone}"
         self.wp_file1 = "/etc/animebg/current_wp1"
         self.wp_file2 = "/etc/animebg/current_wp2"
         self.current_wp = ""
